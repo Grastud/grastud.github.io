@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>The Storybook</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-image: radial-gradient(circle at 49% 0, #cecece, #535455 );}
+        hr {
+            border-bottom: solid 2px black;
+        }
+
+        .col-2 {
+            width: 16.66%;
+            float: left;
+            padding: 15px;
+
+        }
+        .col-4 {
+            width: 33.33%;
+            float: left;
+            padding: 1%;
+            border:  solid 2px transparent;
+        }
+
+         .col-8 {
+             background-color: transparent;
+             width: 66.66%;
+             float: left;
+             padding: 15px;
+
+         }
+
+         .gray_font {
+             color: #7b726c;
+         }
+         .col-12 {
+             width: 100%;
+             float: left;
+             padding-top: 3%;
+         }
+         #paper {
+             box-shadow: 0 6px 7px 1px rgba(0, 0, 0, 0.67);
+             background-image: radial-gradient(circle at 51% 0, #fff9f6, #f3dfce);
+         }
+
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+
+        #center {
+            background-color: #e25e3b;
+            color: white;
+            border: solid 3px #fff1e5
+
+        }
+        #left, #right {
+            background-color: #699ab7;
+            color: white;
+            border: solid 3px #fff1e5;
+
+        }
+        #effort {
+            padding: 2%;
+
+        }
+
+         .grid {
+             height: 300px;
+         }
+
+         .grid img {
+             height: 100%;
+         }
+         .bg-cover {
+             background-size: cover;
+             background-position: center center;
+             background-repeat: no-repeat;
+             height: 400px;
+             border: solid 3px #fff1e5;
+
+         }
+
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Perpetua,sans-serif;
+            font-size: 3em;
+        }
+        h3 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        h5 {
+            text-align: center;
+
+        }
+        #gray_hr {
+            border: solid 3px #bfb9b6;
+        }
+
+
+        abbr:hover , dfn:hover {
+            color: orangered;
+        }
+
+
+     caption {
+         padding: 8px;
+         caption-side: top;
+     }
+
+     table {
+         border-collapse: collapse;
+         border-top: 3px solid #7b726c;
+         border-bottom: 3px solid #7b726c;
+
+     }
+
+     td, th {
+         padding: 1% 1%;
+     }
+
+     td {
+         text-align: center;
+     }
+    </style>
+</head>
+<body>
+<div class="col-2"></div>
+<div class="col-8" id="paper">
+<header>
+   <!--<h1>web engineering <dfn title="Drehbuch">Storybook</dfn></h1>-->
+    <h1>web engineering Storybook</h1>
+</header>
+<main>
+    <div class="col-4" id="left">This installment of the <dfn title="WebEngineering">webeC</dfn> module is
+        delivered in the spring semester of 2019.</div>
+    <div class="col-4" id="center">Group 4iCa Room: 5.2A17 <br>Campus Brugg-Windisch </div>
+    <div class="col-4" id="right">Examination Details: <br>MSP date to be announced </div>
+    <hr>
+    <div class="col-4">
+        <h3>Module Overview</h3>
+        <p>The web is one of the most commonly used platforms for software applications.
+            Web Engineering imparts basics about the construction of web presences: from simple static web sites to dynamic, distributed, database based multi-user applications.
+            <br>Web application architecture, components and their interaction, e.g. the use of Server Pages, Web MVC, Single Page Apps and REST architectural style;
+            <br>Client technologies, e.g. HTML, CSS, JavaScript, and server technologies including simple database access;
+            <br>Application of these technologies including validation and automated tests of the overall system from an engineering point of view;
+
+            </p>
+
+    </div>
+
+    <div class="col-8 bg-cover grid" style="background-image: url(https://www.fhnw.ch/de/medien/bildergalerie/media/cbw_architektur_004.jpg); margin-bottom: 5px"></div>
+    <hr  id="gray_hr">
+
+    <table class="col-8">
+
+        <caption> <b>Delivery dates </b></caption>
+
+        <tbody>
+            <!-- fill from /storybook.txt here -->
+                <tr>
+                    <th>Date</th>
+                    <th>Time </th>
+                    <th>Topic</th>
+                </tr>
+                <tr>
+                    <td>Mi, 20.02.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>Mi, 27.02.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td> Mi, 06.03.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>Grails, Web, MVC,</td>
+                </tr>
+                <tr>
+                    <td>Mi, 13.03.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>GSP, Template, Taglib, Layout</td>
+                </tr>
+                <tr>
+                    <td>Mi, 20.03.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>Consolidation training, Testing</td>
+                </tr>
+                <tr>
+                    <td>Mi, 27.03.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>Persistence, DB-Access (GORM)</td>
+                </tr>
+                <tr>
+                    <td>Mi, 03.04.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>REST, Services</td>
+                </tr>
+                <tr>
+                    <td>Mi, 10.04.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td> Role-based Security</td>
+                </tr>
+                <tr>
+                    <td>  Mi, 17.04.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td> <b>Project Preparation ** Obligatory attendance **</b></td>
+                </tr>
+            <tr class="gray_font">
+                <td>  Mi, 24.04.19</td>
+                <td>08:15 - 11:00</td>
+                <td>No class</td>
+            </tr>
+            <tr class="gray_font">
+                <td>  Mi,01.05.19</td>
+                <td>08:15 - 11:00</td>
+                <td> No class</td>
+            </tr>
+            <tr class="gray_font">
+                <td>  Mi, 08.05.19</td>
+                <td>08:15 - 11:00</td>
+                <td> No class</td>
+            </tr>
+                <tr>
+                    <td>Mi, 15.05.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td> Project work</td>
+                </tr>
+                <tr>
+                    <td>Mi, 22.05.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td> <b>Javascript, ** Project submission **</b></td>
+                </tr>
+                <tr>
+                    <td>Mi, 29.05.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>Responsive / Mobile Web</td>
+                </tr>
+                <tr>
+                    <td>Mi, 05.06.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>Deployment</td>
+                </tr>
+                <tr>
+                    <td>Mi, 12.06.19</td>
+                    <td>08:15 - 11:00</td>
+                    <td>Exam preparation</td>
+                </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+            </tbody>
+
+        </table>
+
+
+    <section>
+        <article class="col-4" id="effort">
+            <h3> Total Effort and Passing Criteria</h3>
+            <p> Classroom lectures add up to <code>15 * 3h = 45h</code>.
+             Prework and afterwork, including homework adds up to <code>15 * 1h = 15h</code>.
+            The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code>.
+            Preparation for the final exam will take approximately <code>8h</code>.
+             Writing the final exam takes <code>2h</code>.
+            This makes a total of <code>90h</code>.</p>
+            <ul>
+                <li>You have to attend the exercise preparation event.</li>
+                <li>You have to do the exercise and deliver before the deadline.</li>
+                <li>You have to attend the <dfn title="Modulschlussprüfung">final exam (MSP)</dfn>.</li>
+            </ul>
+            <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>.
+
+             EN and MSP together make your final grade. </p>
+
+            <h3>Learning Objectives</h3>
+            <p>The students know the basic techniques required for the central aspects of a web application, such as client and server technologies,
+                static and dynamic content, the integration of a database. They can explain the main concepts of the the various technologies covered in the module and are
+                able to build a reliable web presence from scratch using an engineering approach</p>
+
+
+        </article>
+    </section>
+</main>
+
+    <div class="col-12">
+        <footer>
+        <address>Dierk König, 5.2B16, mailto:dierk.koenig@fhnw.ch</address>
+            <address>Christian Ribeaud, mailto:christian.ribeaud@fhnw.ch</address>
+        </footer>
+    </div>
+
+</div>
+</body>
+</html>
